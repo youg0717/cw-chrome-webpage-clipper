@@ -1,5 +1,5 @@
 {
-  "name": "SendUrl To ChatWork"
+  "name": "SendUrl To ChatWork",
   "version": "0.1",
   "manifest_version": 2,
   "description": "表示しているページのURLとタイトルを、チャットワークへ送信します",

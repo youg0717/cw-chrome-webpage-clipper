@@ -3,7 +3,7 @@
   "version": "0.1",
   "manifest_version": 2,
   "description": "表示しているページのURLとタイトルを、チャットワークへ送信します",
-  "permissions": ["contextMenus","http://*/*", "https://*/*"],
+  "permissions": ["contextMenus","<all_urls>"],
   "background": {"page": "background.html"},
   "options_page": "options.html"
 }

@@ -19,16 +19,20 @@
         sendToChatWork(content);
       }
     });
-    
+
     var sendToChatWork = function(content) {
-        var xhr = new XMLHttpRequest();
         var api_token = localStorage.token;
         var room_id = localStorage.room_id;
-        xhr.open("POST", 'https://api.chatwork.com/v1/rooms/' + room_id + '/messages', true);
 
-        xhr.setRequestHeader('X-ChatWorkToken', api_token);
-        xhr.setRequestHeader("Content-Type" , "application/x-www-form-urlencoded");
-        xhr.send('body=' + encodeURIComponent(content));  
+        $.ajax({
+            url: 'https://api.chatwork.com/v1/rooms/' + room_id + '/messages',
+            type: 'POST',
+            headers: {
+               'X-ChatWorkToken': api_token
+            },
+            dataType: 'json',
+            data: {body: content}
+        });
     };
 
     var getTitleFromUrl = function(url, default_title, callback) {

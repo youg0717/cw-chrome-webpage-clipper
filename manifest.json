@@ -1,9 +1,14 @@
 {
   "name": "SendUrl To ChatWork",
-  "version": "0.2",
+  "version": "0.3",
   "manifest_version": 2,
   "description": "表示しているページのURLとタイトルを、チャットワークへ送信します",
   "permissions": ["contextMenus","<all_urls>"],
   "background": {"page": "background.html"},
+  "icons": {
+      "19": "icon/19.png",
+      "48": "icon/48.png",
+      "128": "icon/128.png"
+  },
   "options_page": "options.html"
 }

@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html>
-<header>
-	<meta charset="UTF-8">
-	<script type="text/javascript" src="options.js"></script>
-</header>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>オプション設定 - SendUrl To ChatWork</title>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="icon/19.png" />
+  <script type="text/javascript" src="options.js"></script>
+</head>
 <body>
-<div style="margin-bottom:10px;">
-ChatWorkトークン: <input type="text" name="token" id="token"/>
-<br />
-投稿先のチャットID: <input type="text" name="room_id" id="room_id"/>
-</div>
-<button id="save">保存する</button>
+  <div class ="wrap">
+    <header>
+      <h1 class="head">SendUrl To ChatWork</h1>
+    </header>
+    <section>
+      <h1>送信先の設定</h1>
+        <div class="form">
+          <table>
+            <tr>
+              <td>ChatWork トークン</td>
+              <td><input type="text" name="token" id="token"/></td>
+            </tr>
+            <tr>
+              <td>投稿先のチャットID</td>
+              <td><input type="text" name="room_id" id="room_id"/></td>
+            </tr>
+          </table>
+        <button class="Button" id="save">保存する</button>
+      </div>
+    </section>
+  </div>
 </body>
 </html>

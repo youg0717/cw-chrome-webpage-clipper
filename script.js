@@ -25,7 +25,7 @@
         var room_id = localStorage.room_id;
 
         $.ajax({
-            url: 'https://api.chatwork.com/v1/rooms/' + room_id + '/messages',
+            url: 'https://api.chatwork.com/v2/rooms/' + room_id + '/messages',
             type: 'POST',
             headers: {
                'X-ChatWorkToken': api_token
